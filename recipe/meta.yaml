@@ -14,16 +14,10 @@ source:
     - {{ cran_mirror }}/src/contrib/Archive/memoise/memoise_{{ version }}.tar.gz
   sha256: b276f9452a26aeb79e12dd7227fcc8712832781a42f92d70e86040da0573980c
 
-
-  # patches:
-   # List any patch files here
-   # - fix.patch
-
 build:
   merge_build_host: True  # [win]
   # If this is a new build for the same version, increment the build number.
   number: 0
-
 
   # This is required to make R link correctly on Linux.
   rpaths:
